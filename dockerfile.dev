@@ -1,0 +1,11 @@
+FROM node:alpine
+
+WORKDIR /usr/src/app
+
+COPY package.json ./
+# 종속성 설치 위의 package.json을 보고
+RUN npm install
+# 소스 관련부
+COPY ./ ./
+
+CMD ["npm","run","start"]
