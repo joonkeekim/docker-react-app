@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - echo "start Creating an image with dockerfile"
+  - echo "start Creating an image with dockerfile!"
   - docker build -t joonkeekim/docker-react-app -f dockerfile.dev ./
 
 script:
